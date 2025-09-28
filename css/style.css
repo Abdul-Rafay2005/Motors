@@ -147,10 +147,10 @@ body {
   margin-right: 12px;
 }
 .hero-right img {
-  width: 540px;
-  max-width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  width: 400px;
+  max-width: 400%;
+  border-radius: 40px;
+  box-shadow: 2px 30px 40px rgba(32, 22, 164, 0.15);
 }
 
 /* Hero Features */
@@ -611,3 +611,101 @@ body {
     }
   }
   
+
+  /* ==============================
+   🔥 Premium Enhancements
+   ============================== */
+
+/* Gradient Headings */
+.hero-left h2 {
+  background: linear-gradient(90deg, #0077ff, #00c896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  letter-spacing: -1px;
+  animation: fadeInDown 1s ease;
+}
+
+/* Hero Animation */
+.hero-left, .hero-right {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1s ease forwards;
+}
+.hero-right {
+  animation-delay: 0.3s;
+}
+@keyframes slideUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Glow Buttons */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: skewX(-20deg);
+}
+.btn-primary:hover::after {
+  animation: shine 1s forwards;
+}
+@keyframes shine {
+  100% { left: 100%; }
+}
+
+/* Hero Features Hover */
+.hero-features div {
+  cursor: pointer;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+.hero-features div:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(90deg, #f1f5f9, #e0f7fa);
+  box-shadow: 0 6px 16px rgba(0,119,255,0.15);
+}
+
+/* Card Hover Glow */
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 18px 36px rgba(0,0,0,0.12), 0 0 20px rgba(0,119,255,0.2);
+}
+
+/* Reviews subtle pop */
+.review-card {
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.review-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* Footer Glow on Hover */
+.site-footer .socials a:hover {
+  color: var(--accent);
+  text-shadow: 0 0 12px rgba(0,119,255,0.5);
+}
+
+/* General grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* If you want featured section always in 3 columns */
+#featuredGrid {
+  grid-template-columns: repeat(3, 1fr);
+}

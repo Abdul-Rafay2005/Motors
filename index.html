@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SH Motors — Premium Japanese Car Imports</title>
-  <meta name="description" content="SH Motors specializes in premium Japanese car imports. Fully inspected, reliable, and affordable vehicles with fast shipping and warranty options." />
+  <title>S.H Motors — Premium Japanese Car Imports</title>
+  <meta name="description" content="S.H Motors specializes in premium Japanese car imports. Fully inspected, reliable, and affordable vehicles with fast shipping and warranty options." />
   <meta name="keywords" content="Japanese cars, car imports, SH Motors, premium cars, used cars, imports from Japan" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,19 +14,25 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
+      <!-- Logo / Brand -->
       <a class="brand" href="index.html">
         <div class="logo">SH</div>
         <div class="brand-text">
-          <h1>SH Motors</h1>
+          <h1>S.H Motors</h1>
           <small>Premium Japanese Car Imports</small>
         </div>
       </a>
+
+      <!-- Navigation -->
       <nav class="nav" aria-label="Main navigation">
         <a href="index.html" class="active">Home</a>
+        <a href="stock.html">Stock</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <a class="cta" href="contact.html"><i class="fa fa-phone"></i> Contact</a>
+
+      <!-- Call-to-action -->
+      <a class="cta" href="tel:+81123456789"><i class="fa fa-phone"></i> +81 123-456-789</a>
     </div>
   </header>
 
@@ -34,16 +40,21 @@
   <section class="hero">
     <div class="hero-inner container">
       <div class="hero-left">
-        <h2>Drive Luxury. Drive Reliability.</h2>
-        <p class="lead">Handpicked Japanese cars — fully inspected, competitively priced, and delivered to your doorstep.</p>
+        <h2>Drive Luxury, Drive Reliability.</h2>
+        <p class="lead">Luxury, Reliability, and Performance — Trusted by car enthusiasts for quality imports, transparent pricing, and exceptional after-sales support.</p>
         <div class="hero-actions">
-          <a href="#inventory" class="btn btn-primary"><i class="fa fa-car"></i> Browse Inventory</a>
+          <a href="stock.html" class="btn btn-primary"><i class="fa fa-car"></i> View Stock</a>
+          <a href="#featured" class="btn btn-primary"><i class="fa fa-star"></i> Featured Cars</a>
           <a href="contact.html" class="btn btn-ghost"><i class="fa fa-envelope"></i> Get in Touch</a>
         </div>
         <div class="hero-features">
-          <div><i class="fa fa-check-circle"></i> Pre-import inspection</div>
           <div><i class="fa fa-truck-fast"></i> Fast shipping</div>
           <div><i class="fa fa-shield-halved"></i> Warranty support</div>
+          <div><i class="fa fa-tags"></i> Competitive pricing</div>
+          <div><i class="fa fa-car"></i> Wide range of models</div>
+          <div><i class="fa fa-handshake"></i> Trusted by 500+ customers</div>
+          <div><i class="fa fa-certificate"></i> Certified quality assurance</div>
+          <div><i class="fa fa-headset"></i> 24/7 customer support</div>
         </div>
       </div>
       <div class="hero-right">
@@ -51,35 +62,28 @@
       </div>
     </div>
   </section>
+<!-- Featured Cars Section -->
+<section id="featured" class="inventory">
+  <h2 class="section-title"><i class="fa fa-star"></i> Featured Cars</h2>
+  <p class="section-subtitle">A glimpse of our top Japanese imports</p>
+  
+  <!-- Featured cars will be injected by JS -->
+  <div id="featuredGrid" class="grid"></div>
 
-  <!-- Inventory Section -->
-  <main class="container">
-    <section id="inventory" class="inventory">
-      <h2 class="section-title"><i class="fa fa-car-side"></i> Available Cars</h2>
-      <p class="section-subtitle">Handpicked Japanese imports — browse by make, year, and price</p>
+  <div class="view-all">
+    <a href="stock.html" class="btn btn-primary"><i class="fa fa-warehouse"></i> View Full Stock</a>
+  </div>
+</section>
 
-      <div class="controls">
-        <input id="search" placeholder="Search by model, make, keyword..." aria-label="Search cars" />
-        <select id="makeFilter" aria-label="Filter by make"><option value="">All makes</option></select>
-        <select id="yearFilter" aria-label="Filter by year"><option value="">All years</option></select>
-        <select id="sort" aria-label="Sort cars">
-          <option value="new">Newest</option>
-          <option value="priceAsc">Price ↑</option>
-          <option value="priceDesc">Price ↓</option>
-        </select>
-      </div>
-      <div id="grid" class="grid" aria-live="polite"></div>
-    </section>
-  </main>
 
   <!-- Reviews Section -->
   <section class="reviews">
     <div class="container">
-      <h2 class="section-title"><i class="fa fa-star"></i> What Our Customers Say</h2>
-      <p class="section-subtitle">Real feedback from satisfied SH Motors clients</p>
+      <h2 class="section-title"><i class="fa fa-comment-dots"></i> What Our Customers Say</h2>
+      <p class="section-subtitle">Real feedback from satisfied S.H Motors clients</p>
       <div class="review-grid">
         <div class="review-card">
-          <p>"SH Motors made my first import process seamless. I received my Toyota in excellent condition and right on time!"</p>
+          <p>"S.H Motors made my first import process seamless. I received my Toyota in excellent condition and right on time!"</p>
           <div class="review-author"><i class="fa fa-user"></i> Ahmed R.</div>
         </div>
         <div class="review-card">
@@ -87,7 +91,7 @@
           <div class="review-author"><i class="fa fa-user"></i> Sarah L.</div>
         </div>
         <div class="review-card">
-          <p>"Competitive prices, honest communication, and fast delivery. Will definitely buy again from SH Motors."</p>
+          <p>"Competitive prices, honest communication, and fast delivery. Will definitely buy again from S.H Motors."</p>
           <div class="review-author"><i class="fa fa-user"></i> James P.</div>
         </div>
       </div>
@@ -101,7 +105,7 @@
       <p class="section-subtitle">Come see our office or schedule an appointment</p>
       <div class="location-grid">
         <div class="location-info">
-          <p><i class="fa fa-building"></i> SH Motors HQ</p>
+          <p><i class="fa fa-building"></i> S.H Motors HQ</p>
           <p><i class="fa fa-map-pin"></i> 123 Tokyo Blvd, Osaka, Japan</p>
           <p><i class="fa fa-phone"></i> +81 123-456-789</p>
           <p><i class="fa fa-envelope"></i> info@shmotors.jp</p>
@@ -140,7 +144,7 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>© 2025 SH Motors — All Rights Reserved</div>
+      <div>© 2025 S.H Motors — All Rights Reserved</div>
       <div class="socials">
         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
