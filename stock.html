@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SH Motors — Stock</title>
+  <meta name="description" content="Explore SH Motors full stock of premium Japanese imports. All cars are inspected, reliable, and available at competitive prices." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">SH</div>
+        <div class="brand-text">
+          <h1>SH Motors</h1>
+          <small>Premium Japanese Imports</small>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="stock.html" class="active">Stock</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="cta" href="contact.html"><i class="fa fa-phone"></i> Contact</a>
+    </div>
+  </header>
+
+  <!-- Stock Page -->
+  <main class="container">
+    <section class="inventory">
+      <h2 class="section-title"><i class="fa fa-warehouse"></i> Full Stock</h2>
+      <p class="section-subtitle">Browse our complete collection of Japanese imports</p>
+
+      <!-- Filters -->
+      <div class="controls">
+        <input id="search" placeholder="Search cars..." aria-label="Search cars" />
+        <select id="makeFilter"><option value="">All Makes</option></select>
+        <select id="yearFilter"><option value="">All Years</option></select>
+        <select id="sort">
+          <option value="new">Newest</option>
+          <option value="priceAsc">Price ↑</option>
+          <option value="priceDesc">Price ↓</option>
+        </select>
+      </div>
+
+      <!-- Cars Grid -->
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+
+  <!-- Modal for Car Details -->
+  <div id="modalBackdrop" class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="closeModal" class="close"><i class="fa fa-times"></i></button>
+      <div class="modal-grid">
+        <div class="modal-images">
+          <img id="carouselImg" src="" alt="Car image preview">
+          <div id="thumbs" class="thumbs"></div>
+        </div>
+        <div class="modal-info">
+          <h3 id="modalTitle"></h3>
+          <p id="modalSub" class="muted"></p>
+          <div class="price" id="modalPrice"></div>
+          <div id="modalSpecs" class="specs"></div>
+          <p id="modalDesc"></p>
+          <div class="modal-actions">
+            <a id="contactBtn" class="btn btn-primary" href="contact.html"><i class="fa fa-envelope"></i> Inquire</a>
+            <a class="btn btn-ghost"><i class="fa fa-heart"></i> Save</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 SH Motors — All Rights Reserved</div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
